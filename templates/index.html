@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% load static %}
+ {% block title %}Home{% endblock %} {% block content %}
+ {% block styles %}
+   <link rel="stylesheet" href="{% static '/css/index.css' %}">
+ {% endblock %}
+<!-- Cover -->
+<section class="cover_video">
+    <div class="video">
+        <video controls autoplay loop>
+            <source src="{% static 'video/GMS.mp4' %}" type="video/mp4">
+            <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</section>
+<!-- !Cover -->
+<!-- Path to Success -->
+<section>
+    <div class="section_title">
+    </div>
+    <div class="body_text">
+        <div class="_1row"></div>
+        <div class="_2row"></div>
+    </div>
+    <div class="path_grid">
+        <div class="grid_button"></div>
+        <div class="grid_button"></div>
+        <div class="grid_button"></div>
+        <div class="grid_button"></div>
+        <div class="grid_button"></div>
+        <div class="grid_button"></div>
+    </div>
+</section>
+<!-- !Path to Success -->
+
+<!-- Indestries -->
+<section>
+    <div class="section_title">
+    </div>
+    <div class="industries_grid">
+        <div class="industry_row">
+            <div class="industry_col"></div>
+            <div class="industry_col"></div>
+            <div class="industry_col"></div>
+        </div>
+        <div class="industry_row">
+            <div class="industry_col"></div>
+            <div class="industry_col"></div>
+            <div class="industry_col"></div>
+        </div>
+        <div class="industry_row">
+            <div class="industry_col"></div>
+            <div class="industry_col"></div>
+            <div class="industry_col"></div>
+        </div>
+    </div>
+</section>
+<!-- !Indestries -->
+
+<!-- Service -->
+<section>
+    <div class="section_title"></div>
+    <div class="body_text"></div>
+    <div class="body_text">
+        <div class="_1row"></div>
+        <div class="_2row"></div>
+    </div>
+    <div class="service_grid">
+        <div class="service_card">
+            <div class="card_pic">
+                <div class="icon"></div>
+            </div>
+            <div class="card_text"></div>
+        </div>
+        <div class="service_card">
+            <div class="card_pic">
+                <div class="icon"></div>
+            </div>
+            <div class="card_text"></div>
+        </div>
+        <div class="service_card">
+            <div class="card_pic">
+                <div class="icon"></div>
+            </div>
+            <div class="card_text"></div>
+        </div>
+        <div class="service_card">
+            <div class="card_pic">
+                <div class="icon"></div>
+            </div>
+            <div class="card_text"></div>
+        </div>
+        <div class="service_card">
+            <div class="card_pic">
+                <div class="icon"></div>
+            </div>
+            <div class="card_text"></div>
+        </div>
+        <div class="service_card">
+            <div class="card_pic">
+                <div class="icon"></div>
+            </div>
+            <div class="card_text"></div>
+        </div>
+    </div>
+</section>
+<!-- !Service -->
+<!-- Our Partner -->
+<section>
+    <div class="section_title"></div>
+    <div class="body_text"></div>
+    <div class="ourpartner_cards">
+        <div class="partner_card"><img src="" alt=""></div>
+        <div class="partner_card"><img src="" alt=""></div>
+        <div class="partner_card"><img src="" alt=""></div>
+        <div class="partner_card"><img src="" alt=""></div>
+    </div>
+</section>
+<!-- !Our Partner -->
+<!-- About Us -->
+<section>
+    <div class="bg">
+        <div class="about_us_title"></div>
+        <div class="about_us_subtitle"></div>
+        <div class="about_us_body_text"></div>
+    </div>
+</section>
+<!-- !About Us -->
+<!-- Contact Us -->
+<section>
+    <div class="bg">
+        <div class="contact_us_title"></div>
+        <div class="contact_us_button">
+            <div class="button_text"></div>
+            <div class="icon"></div>
+        </div>
+    </div>
+</section>
+<!-- !Contact Us -->
+{% endblock %}

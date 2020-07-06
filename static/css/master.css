@@ -1,0 +1,196 @@
+@font-face {
+  font-family: Amiri;
+  font-weight: normal;
+  src: url("../fonts/Amiri-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Amiri;
+  font-weight: bold;
+  src: url("../fonts/Amiri-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Noto Serif JP;
+  font-weight: normal;
+  src: url("../fonts/NotoSerifJP-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Noto Serif JP;
+  font-weight: bold;
+  src: url("../fonts/NotoSerifJP-Bold.otf") format("opentype");
+}
+
+header .navbar {
+  background-color: #4F4F4F;
+  height: 6.3vw;
+  padding: 0;
+}
+
+header .navbar .logo {
+  font-family: Amiri;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 0 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .logo .acronym {
+  font-size: 2.4vw;
+}
+
+header .navbar .logo .full_name {
+  font-size: 1.2vw;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: Amiri;
+  font-size: 1vw;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=master.css.map */
