@@ -1,141 +1,189 @@
-{% extends "base.html" %}
-{% load static %}
- {% block title %}Home{% endblock %} {% block content %}
- {% block styles %}
-   <link rel="stylesheet" href="{% static '/css/index.css' %}">
- {% endblock %}
+{% extends "base.html" %} {% load static %} {% block title %}Home{% endblock %} {% block styles %}
+<link rel="stylesheet" href="{% static '/css/index.css' %}"> {% endblock %} {% block content %}
 <!-- Cover -->
-<section class="cover_video">
+<section id="cover">
     <div class="video">
-        <video controls autoplay loop>
+        <video autoplay loop muted>
             <source src="{% static 'video/GMS.mp4' %}" type="video/mp4">
             <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
             Your browser does not support HTML video.
         </video>
     </div>
+    <div class="cover_mobile">
+        <div class="cover_message">みんなが喜ぶ<br>ビジネス社会、<br>あなたと共に掴む未来</div>
+        <img src="{% static 'img/home_cover.png' %}" alt="">
+    </div>
 </section>
 <!-- !Cover -->
 <!-- Path to Success -->
-<section>
-    <div class="section_title">
+<section id="path_to_success">
+    <div class="section_title">Path to success
     </div>
     <div class="body_text">
-        <div class="_1row"></div>
-        <div class="_2row"></div>
+        <p>お悩み解決</p>
+        <p>私たちは皆さんのお悩み・課題を解決に向けてサポートいたします。</p>
     </div>
-    <div class="path_grid">
-        <div class="grid_button"></div>
-        <div class="grid_button"></div>
-        <div class="grid_button"></div>
-        <div class="grid_button"></div>
-        <div class="grid_button"></div>
-        <div class="grid_button"></div>
+    <div class="grid_container">
+        <div class="path_grid">
+            <div class="grid_button card_shadow">PRをどこから始めたらいいか<br>分からない</div>
+            <div class="grid_button card_shadow">海外進出したい</div>
+            <div class="grid_button card_shadow">起業支援</div>
+            <div class="grid_button card_shadow">販売パートナーを増やしたい</div>
+            <div class="grid_button card_shadow">ホームページを <br>リニューアルしたい</div>
+            <div class="grid_button card_shadow">システム開発</div>
+        </div>
     </div>
 </section>
 <!-- !Path to Success -->
-
-<!-- Indestries -->
-<section>
-    <div class="section_title">
-    </div>
+<!-- Industries -->
+<section id="industries">
+    <div class="section_title">Industries</div>
+    <div class="body_text">産業領域</div>
     <div class="industries_grid">
         <div class="industry_row">
-            <div class="industry_col"></div>
-            <div class="industry_col"></div>
-            <div class="industry_col"></div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries1.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile1.png' %}" alt="">
+                <div class="filter">農業技術</div>
+            </div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries2.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile2.png' %}" alt="">
+                <div class="filter"> 健康管理</div>
+            </div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries3.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile3.png' %}" alt="">
+                <div class="filter desktop"> モバイルバンキング</div>
+                <div class="filter mobile"> モバイル<br>バンキング</div>
+            </div>
         </div>
         <div class="industry_row">
-            <div class="industry_col"></div>
-            <div class="industry_col"></div>
-            <div class="industry_col"></div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries4.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile4.png' %}" alt="">
+                <div class="filter desktop"> ブロックチェーン・<br>AI</div>
+                <div class="filter mobile"> ブロックチェーン<br>・AI</div>
+            </div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries5.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile5.png' %}" alt="">
+                <div class="filter desktop"> 金融サービス・<br>税務コストの最適化</div>
+                <div class="filter mobile"> 金融サービス<br>税務コストの最適化</div>
+            </div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries6.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile6.png' %}" alt="">
+                <div class="filter"> ファミリーケア</div>
+            </div>
         </div>
         <div class="industry_row">
-            <div class="industry_col"></div>
-            <div class="industry_col"></div>
-            <div class="industry_col"></div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries7.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile7.png' %}" alt="">
+                <div class="filter desktop"> IT・システム<br>インテグレーション（SI)</div>
+                <div class="filter mobile"> IT・システムイ<br>ンテグレーション</div>
+            </div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries8.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile8.png' %}" alt="">
+                <div class="filter"> ゲーム</div>
+            </div>
+            <div class="industry_item">
+                <img class="desktop" src="{% static 'img/industries9.png' %}" alt="">
+                <img class="mobile" src="{% static 'img/industries_mobile9.png' %}" alt="">
+                <div class="filter">航空宇宙</div>
+            </div>
         </div>
     </div>
 </section>
-<!-- !Indestries -->
+<!-- !Industries -->
 
 <!-- Service -->
-<section>
-    <div class="section_title"></div>
-    <div class="body_text"></div>
+<section id="service">
+    <div class="section_title">Service</div>
     <div class="body_text">
-        <div class="_1row"></div>
-        <div class="_2row"></div>
+        <p>サービス</p>
+        <p>各分野のエキスパートがお客様のニーズに<br>合わせて、成功へと導きます。</p>
     </div>
-    <div class="service_grid">
-        <div class="service_card">
-            <div class="card_pic">
-                <div class="icon"></div>
+    <div class="service_grid_container">
+        <div class="service_grid">
+            <div class="service_card card_shadow">
+                <div class="card_pic">
+                    <img src="{%static 'img/service1.svg' %}" alt="">
+                </div>
+                <div class="card_text desktop">デジタルマーケティングコンサルティング</div>
+                <div class="card_text mobile">デジタルマーケティン<br>グコンサルティング</div>
             </div>
-            <div class="card_text"></div>
-        </div>
-        <div class="service_card">
-            <div class="card_pic">
-                <div class="icon"></div>
+            <div class="service_card card_shadow">
+                <div class="card_pic">
+                    <img src="{%static 'img/service2.svg' %}" alt="">
+                </div>
+                <div class="card_text">ウェブ・アプリ・<br>Blockchain<br>制作&運用
+                </div>
             </div>
-            <div class="card_text"></div>
-        </div>
-        <div class="service_card">
-            <div class="card_pic">
-                <div class="icon"></div>
+            <div class="service_card card_shadow">
+                <div class="card_pic">
+                    <img src="{%static 'img/service3.svg' %}" alt="">
+                </div>
+                <div class="card_text">健康管理</div>
             </div>
-            <div class="card_text"></div>
-        </div>
-        <div class="service_card">
-            <div class="card_pic">
-                <div class="icon"></div>
+            <div class="service_card card_shadow">
+                <div class="card_pic">
+                    <img src="{%static 'img/service4.svg' %}" alt="">
+                </div>
+                <div class="card_text">海外進出</div>
             </div>
-            <div class="card_text"></div>
-        </div>
-        <div class="service_card">
-            <div class="card_pic">
-                <div class="icon"></div>
+            <div class="service_card card_shadow">
+                <div class="card_pic">
+                    <img src="{%static 'img/service5.svg' %}" alt="">
+                </div>
+                <div class="card_text">不動産開発</div>
             </div>
-            <div class="card_text"></div>
-        </div>
-        <div class="service_card">
-            <div class="card_pic">
-                <div class="icon"></div>
+            <div class="service_card card_shadow">
+                <div class="card_pic">
+                    <img src="{%static 'img/service6.svg' %}" alt="">
+                </div>
+                <div class="card_text">投資マッチング<br>税務監督・<br>最適化サービス</div>
             </div>
-            <div class="card_text"></div>
         </div>
     </div>
 </section>
 <!-- !Service -->
 <!-- Our Partner -->
-<section>
-    <div class="section_title"></div>
-    <div class="body_text"></div>
+<section id="partner">
+    <div class="section_title">Our Partner</div>
+    <div class="body_text">パートナー</div>
     <div class="ourpartner_cards">
-        <div class="partner_card"><img src="" alt=""></div>
-        <div class="partner_card"><img src="" alt=""></div>
-        <div class="partner_card"><img src="" alt=""></div>
-        <div class="partner_card"><img src="" alt=""></div>
+        <div class="partner_card card_shadow"><img src="{%static 'img/partner1.png'%}" alt=""></div>
+        <div class="partner_card card_shadow"><img src="{%static 'img/partner2.png'%}" alt=""></div>
+        <div class="partner_card card_shadow"><img src="{%static 'img/partner3.png'%}" alt=""></div>
+        <div class="partner_card card_shadow"><img src="{%static 'img/partner4.png'%}" alt=""></div>
     </div>
 </section>
 <!-- !Our Partner -->
 <!-- About Us -->
-<section>
+<section id="about_us">
+    <img class="desktop" src="{% static 'img/about_us.png' %}" alt="">
+    <img class="mobile" src="{% static 'img/about_us_mobile.png' %}" alt="">
     <div class="bg">
-        <div class="about_us_title"></div>
-        <div class="about_us_subtitle"></div>
-        <div class="about_us_body_text"></div>
-    </div>
-</section>
-<!-- !About Us -->
-<!-- Contact Us -->
-<section>
-    <div class="bg">
-        <div class="contact_us_title"></div>
-        <div class="contact_us_button">
-            <div class="button_text"></div>
-            <div class="icon"></div>
+        <div class="section_title">About Us</div>
+        <div class="body_text">
+            <p class="sub_title">私たちの強み・理念</p>
+            <p class="desktop">
+                GMS Groupでは、お客様の課題に注目し最も適した施策が提案できるよう、<br> 各部門の専門パートナーと提携しております。
+                <br> お客様の課題とご要望(納期・予算・仕様)に合わせて、各パートナーの特徴を把握したGMSのスタッフが最適な
+                <br> チームを構築し ていきます。また、ほぼ全ての案件において、外部のパートナーと協力し合いながら進める体制を<br> 取っております。そのため、お客様のプロジェクト進行に必要な多種多様なスキルや経験を持ち合わせております。
+                <br> 是非安心してご相談ください。
+            </p>
+            <p class="mobile">GMS Groupでは、お客様の課題に注目し最も適した施策が提案できるよう、</p>
+            <p class="mobile">各部門の専門パートナーと提携しております。</p>
+            <p class="mobile">お客様の課題とご要望(納期・予算・仕様)に合わせて、各パートナーの特徴を把握した</p>
+            <p class="mobile">GMSのスタッフが最適なチームを構築し ていきます。</p>
+            <p class="mobile">また、ほぼ全ての案件において、パートナーと協力し合いながら進める体制を取っております。そのため、お客様のプロジェクト進行に必要な多種多様なスキルや経験を持ち合わせております。 </p>
+            <p class="mobile">是非安心してご相談ください。</p>
         </div>
     </div>
 </section>
-<!-- !Contact Us -->
-{% endblock %}
+<!-- !About Us -->
+{% include "_contact_us_section.html" %} {% endblock %}

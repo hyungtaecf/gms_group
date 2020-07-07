@@ -12,26 +12,50 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="logo" href="#">
+            <div class="search">
+                <img src="{% static 'img/search.svg' %}" alt="">
+            </div>
+            <a class="logo" href="{% url 'home' %}">
                 <div class="acronym">GMS Group</div>
                 <div class="full_name">Global Management Support</div>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <a class="navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="{% static 'img/dehaze.svg' %}" alt="">
+            </a>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'service' %}">
+                            <div class="english">Service</div>
+                            <div class="japanese">サービス</div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#industries">
+                            <div class="english">Industries</div>
+                            <div class="japanese">産業領域</div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#about_us">
+                            <div class="english">About Us</div>
+                            <div class="japanese">会社概要</div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link contact_us_menu_item" href="#">
+                            <div class="english">Contact Us</div>
+                            <div class="japanese">お問い合わせ</div>
+                        </a>
+                    </li>
+                    <li class="language">
+                        <div class="language_item en">
+                            <a href="#">EN</a>
+                        </div>
+                        <div class="lang_separator">|</div>
+                        <div class="language_item jp">
+                            <a href="#">JP</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -40,7 +64,29 @@
     <main>
         {% block content %}{% endblock %}
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer_col_left">
+            <div class="brand_name">GMS Group</div>
+            <div class="footer_left_item">サービス</div>
+            <div class="footer_left_item">産業領域</div>
+            <div class="footer_left_item">会社概要</div>
+            <div class="footer_left_item">お問い合わせ</div>
+        </div>
+        <div class="footer_col_right">
+            <div class="footer_right_item">
+                <strong>所在地</strong><br>東京都世田谷区千歳台4-6-5
+            </div>
+            <div class="footer_right_item">
+                <strong>電話番号</strong><br>03-6555-2588
+            </div>
+            <div class="footer_right_item">
+                <strong>電話受付時間</strong><br>9:00〜18:00（月曜日〜金曜日）<br>※ 土曜・日曜は休み
+            </div>
+            <div class="footer_right_item">
+                <strong>公開メールアドレス</strong><br>info@gms.jp<br>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

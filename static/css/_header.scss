@@ -1,21 +1,143 @@
 header {
+    .search {
+        display: none;
+    }
+    .navbar_toggler {
+        display: none;
+    }
     .navbar {
+        $height: 6.3vw;
         background-color: $dark;
-        height: 6.3vw;
+        height: $height;
         padding: 0;
+        text-shadow: 0 .25vw .25vw rgba($black, 0.25);
+        color: $white;
+        font-size: 1.5vw;
         .logo {
             font-family: Amiri;
             font-weight: normal;
             color: $white;
-            text-shadow: 0 .25vw .25vw rgba($black, 0.25);
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            height: $height;
+            width: 20vw;
             .acronym {
                 font-size: 2.4vw;
             }
             .full_name {
                 font-size: 1.2vw;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                height: $height;
+                .nav-link {
+                    padding: 0;
+                    height: 100%;
+                    width: 11.25vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white;
+                    .japanese {
+                        font-size: .75vw;
+                        font-family: Noto Serif JP;
+                        margin-top: .5vw;
+                    }
+                    &.contact_us_menu_item {
+                        background-color: $primary_alt1;
+                    }
+                }
+            }
+            .language {
+                display: flex;
+                .language_item {
+                    width: 7vw;
+                    display: flex;
+                    align-items: center;
+                    &.en {
+                        justify-content: flex-end;
+                    }
+                }
+                .lang_separator {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 1.25vw;
+                }
+            }
+        }
+    }
+    @media #{$query_tablet} {
+        $height: 21.3vw;
+        $margin: 6.4vw;
+        min-height: $height;
+        .search {
+            display: flex;
+            align-items: center;
+            margin-left: $margin;
+            img {
+                width: 6.4vw;
+            }
+        }
+        .navbar_toggler {
+            display: flex;
+            align-items: center;
+            margin-right: $margin;
+            img {
+                width: 6.4vw;
+            }
+        }
+        .navbar-collapse {
+            background: linear-gradient($dark, rgba($dark, 0)) rgba($dark, 0.75);
+        }
+        .navbar {
+            min-height: $height;
+            font-size: 4.8vw;
+            .logo {
+                height: $height;
+                width: unset;
+                .acronym {
+                    font-size: 6.4vw;
+                }
+                .full_name {
+                    display: none;
+                }
+            }
+            .navbar-nav {
+                $padding: 3vw;
+                .nav-item {
+                    height: auto;
+                    .nav-link {
+                        padding: $padding $margin;
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        .japanese {
+                            font-size: 2.5vw;
+                            margin: 0 3vw;
+                        }
+                    }
+                }
+                .language {
+                    padding: $padding $margin;
+                    .language_item {
+                        width: 7vw;
+                        display: flex;
+                        align-items: center;
+                        &.en {
+                            justify-content: end;
+                        }
+                    }
+                    .lang_separator {
+                        display: flex;
+                        align-items: center;
+                        margin: 0 3vw;
+                    }
+                }
             }
         }
     }

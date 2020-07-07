@@ -18,6 +18,12 @@
 
 @font-face {
     font-family: Noto Serif JP;
+    font-weight: 500;
+    src: url('../fonts/NotoSerifJP-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Noto Serif JP;
     font-weight: bold;
     src: url('../fonts/NotoSerifJP-Bold.otf') format('opentype');
 }

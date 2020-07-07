@@ -1,0 +1,105 @@
+#contact_us {
+  padding: 12.5vw 0 8.25vw;
+}
+
+#contact_us .bg {
+  background: #FF981F;
+  padding: 6vw 12vw;
+}
+
+#contact_us .bg .contact_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#contact_us .bg .contact_grid .contact_us_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+#contact_us .bg .contact_grid a {
+  color: #000;
+}
+
+#contact_us .bg .contact_grid .contact_us_button {
+  font-family: Noto Serif JP;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2vw 0;
+}
+
+#contact_us .bg .contact_grid .contact_us_button .button_text {
+  font-size: 1.5vw;
+}
+
+#contact_us .bg .contact_grid .contact_us_button img {
+  height: 1.25vw;
+  margin-left: 1vw;
+}
+
+@media (max-width: 767.98px) {
+  #contact_us {
+    padding: 16.7vw 0 10.386vw;
+  }
+  #contact_us .bg {
+    padding: 10.6vw 25vw;
+  }
+  #contact_us .bg .contact_grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #contact_us .bg .contact_grid .contact_us_title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: normal;
+    height: 13.5vw;
+    font-size: 5.8vw;
+  }
+  #contact_us .bg .contact_grid a {
+    color: #000;
+  }
+  #contact_us .bg .contact_grid .contact_us_button {
+    font-family: Noto Serif JP;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2vw 0;
+    height: 13.5vw;
+  }
+  #contact_us .bg .contact_grid .contact_us_button .button_text {
+    font-size: 2.9vw;
+  }
+  #contact_us .bg .contact_grid .contact_us_button img {
+    height: 2.75vw;
+    margin-left: 2vw;
+  }
+}
+
+header {
+  height: 6.3vw;
+}
+/*# sourceMappingURL=service.css.map */
