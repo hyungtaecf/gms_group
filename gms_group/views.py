@@ -1,4 +1,5 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, FormView
+from .forms import ContactForm
 
 class Home(TemplateView):
     template_name='index.html'
@@ -12,8 +13,14 @@ class Industries(TemplateView):
 class AboutUs(TemplateView):
     template_name='about_us.html'
 
-class ContactUs(TemplateView):
+class ContactUs(FormView):
+    form_class = ContactForm
     template_name='contact_us.html'
+    success_url = '/thank_you/'
+
+    def form_valid(self, form):
+        form.send_email()
+        return super().form_valid(form)
 
 class ThankYou(TemplateView):
     template_name='thank_you.html'

@@ -1,0 +1,25 @@
+header {
+  height: 6.3vw;
+}
+
+#thank_you {
+  font-family: Noto Serif JP;
+}
+
+#thank_you .big_message {
+  font-weight: bold;
+  font-size: 2.25vw;
+  text-align: center;
+  margin: 12.7vw 0 3vw;
+}
+
+#thank_you .small_message {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+#thank_you img {
+  width: 100%;
+  margin: 9vw 0 14.813vw;
+}
+/*# sourceMappingURL=thank_you.css.map */

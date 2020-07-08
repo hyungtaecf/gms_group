@@ -1,6 +1,73 @@
 @import './variables';
 @import './cover_section';
-@import './contact_section';
 .title_container {
     left: .3vw;
+}
+
+article {
+    font-family: Noto Serif JP;
+    text-align: center;
+    font-size: 1.5vw;
+    p {
+        margin-bottom: 3vw;
+    }
+}
+
+form {
+    $label_width: 13vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 9.375vw 0;
+    padding-left: $label_width;
+    .form_group {
+        position: relative;
+        $input_height: 4.625vw;
+        margin-bottom: 4vw;
+        label {
+            font-weight: bold;
+            position: absolute;
+            left: calc(-#{$label_width} - 1.5vw);
+            top: 50%;
+            width: $label_width;
+            text-align: right;
+            transform: translateY(-50%);
+            &[for="inquiry"] {
+                top: calc( #{$input_height} / 2)
+            }
+        }
+        input,
+        textarea {
+            background: rgba($input_background, 0.47);
+            border: .063vw solid rgba($black, 0.17);
+            box-shadow: inset 0px .25vw .25vw rgba($black, 0.09);
+            padding: 2.25vw;
+            width: 54.75vw;
+        }
+        input {
+            height: 4.625vw;
+        }
+        textarea {
+            height: 19vw;
+            resize: none;
+        }
+         ::placeholder {
+            color: rgba($black, 0.22);
+            ;
+        }
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: $primary;
+        height: 3.688vw;
+        width: 31.813vw;
+        &:hover {
+            box-shadow: 0 .25vw .25vw rgba($black, .5);
+            transition: .3s ease;
+        }
+    }
 }

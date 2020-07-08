@@ -112,40 +112,92 @@ header {
   }
 }
 
-#contact_us {
-  padding: 12.5vw 0 8.25vw;
+.title_container {
+  left: .3vw;
 }
 
-#contact_us .bg {
-  background: #FF981F;
-  padding: 6vw 12vw;
+article {
+  font-family: Noto Serif JP;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
-#contact_us .bg .contact_grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+article p {
+  margin-bottom: 3vw;
 }
 
-#contact_us .bg .contact_grid .contact_us_title {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.5vw;
+  padding: 9.375vw 0;
+  padding-left: 13vw;
+}
+
+form .form_group {
+  position: relative;
+  margin-bottom: 4vw;
+}
+
+form .form_group label {
   font-weight: bold;
-  font-size: 3vw;
+  position: absolute;
+  left: calc(-13vw - 1.5vw);
+  top: 50%;
+  width: 13vw;
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-#contact_us .bg .contact_grid a {
-  color: #000;
+form .form_group label[for="inquiry"] {
+  top: calc( 4.625vw / 2);
 }
 
-#contact_us .bg .contact_grid .contact_us_button {
-  font-family: Noto Serif JP;
-  background: #fff;
+form .form_group input,
+form .form_group textarea {
+  background: rgba(233, 233, 233, 0.47);
+  border: 0.063vw solid rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: inset 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.09);
+          box-shadow: inset 0px 0.25vw 0.25vw rgba(0, 0, 0, 0.09);
+  padding: 2.25vw;
+  width: 54.75vw;
+}
+
+form .form_group input {
+  height: 4.625vw;
+}
+
+form .form_group textarea {
+  height: 19vw;
+  resize: none;
+}
+
+form .form_group ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.22);
+}
+
+form .form_group :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.22);
+}
+
+form .form_group ::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.22);
+}
+
+form .form_group ::placeholder {
+  color: rgba(0, 0, 0, 0.22);
+}
+
+form button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,78 +207,16 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2vw 0;
+  border: none;
+  background: #FF981F;
+  height: 3.688vw;
+  width: 31.813vw;
 }
 
-#contact_us .bg .contact_grid .contact_us_button .button_text {
-  font-size: 1.5vw;
-}
-
-#contact_us .bg .contact_grid .contact_us_button img {
-  height: 1.25vw;
-  margin-left: 1vw;
-}
-
-#contact_us .bg .contact_grid .contact_us_button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#E9E9E9));
-  background: linear-gradient(#fff, #E9E9E9);
+form button:hover {
   -webkit-box-shadow: 0 0.25vw 0.25vw rgba(0, 0, 0, 0.5);
           box-shadow: 0 0.25vw 0.25vw rgba(0, 0, 0, 0.5);
   -webkit-transition: .3s ease;
   transition: .3s ease;
-}
-
-#contact_us .bg .contact_grid .contact_us_button:hover .button_text {
-  color: #4F4F4F;
-}
-
-@media (max-width: 767.98px) {
-  #contact_us {
-    padding: 16.7vw 0 10.386vw;
-  }
-  #contact_us .bg {
-    padding: 10.6vw 25vw;
-  }
-  #contact_us .bg .contact_grid {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  #contact_us .bg .contact_grid .contact_us_title {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-weight: normal;
-    height: 13.5vw;
-    font-size: 5.8vw;
-  }
-  #contact_us .bg .contact_grid a {
-    color: #000;
-  }
-  #contact_us .bg .contact_grid .contact_us_button {
-    font-family: Noto Serif JP;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 2vw 0;
-    height: 13.5vw;
-  }
-  #contact_us .bg .contact_grid .contact_us_button .button_text {
-    font-size: 2.9vw;
-  }
-  #contact_us .bg .contact_grid .contact_us_button img {
-    height: 2.75vw;
-    margin-left: 2vw;
-  }
-}
-
-.title_container {
-  left: .3vw;
 }
 /*# sourceMappingURL=contact_us.css.map */

@@ -70,6 +70,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'gms_group.wsgi.application'
 
+# Email Backend
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'info@agrevo.life'
+EMAIL_HOST_PASSWORD = 'To3mo5iki8cosmo'
+EMAIL_PORT = 587
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

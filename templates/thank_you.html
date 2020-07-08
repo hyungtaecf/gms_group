@@ -1,3 +1,8 @@
-{% extends "base.html" %} {% load static %} {% block title %}Thank You{% endblock %} {% block styles %}{% endblock %} {% block content %}
-
+{% extends "base.html" %} {% load static %} {% block title %}Thank You{% endblock %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/thank_you.css' %}"> {% endblock %} {% block content %}
+<section id="thank_you">
+    <div class="big_message">送信完了いたしました。</div>
+    <div class="small_message">１〜３営業日中にご連絡いたしますので少々お待ち下さい。</div>
+    <img src="{% static 'img/thank_you.png' %}" alt="Thank you">
+</section>
 {% endblock %}
