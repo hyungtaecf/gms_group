@@ -29,6 +29,14 @@
                     height: 1.25vw;
                     margin-left: 1vw;
                 }
+                &:hover {
+                    background: linear-gradient($white, $lightgrey);
+                    box-shadow: 0 .25vw .25vw rgba($black, .5);
+                    transition: .3s ease;
+                    .button_text {
+                        color: $dark;
+                    }
+                }
             }
         }
     }

@@ -6,6 +6,13 @@ footer {
     justify-content: space-between;
     .footer_col_left {
         $margin: 1.75vw;
+        * {
+            &:hover {
+                color: $primary;
+                letter-spacing: .1vw;
+                transition: .3s ease-in;
+            }
+        }
         .brand_name {
             font-size: 2.5vw;
             font-weight: bold;
@@ -13,13 +20,13 @@ footer {
         }
         .footer_left_item {
             font-size: 1.5vw;
-            font-family: Noto Serif JP;
+            font-family: Noto Sans JP;
             margin-bottom: $margin;
         }
     }
     .footer_col_right {
         .footer_right_item {
-            font-family: Noto Serif JP;
+            font-family: Noto Sans JP;
             font-size: 1.15vw;
             line-height: 1.5;
             strong {

@@ -1,0 +1,268 @@
+header {
+  height: 6.3vw;
+}
+
+.cover_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 30vw;
+  margin-bottom: 5.875vw;
+}
+
+.cover_section .mobile_super_title {
+  display: none;
+}
+
+.cover_section .title_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+}
+
+.cover_section .title_container .page_title {
+  position: absolute;
+  bottom: 50%;
+  right: -10vw;
+  -webkit-transform: translateY(50%) rotate(-90deg);
+          transform: translateY(50%) rotate(-90deg);
+  font-size: 6vw;
+  font-weight: bold;
+  color: #FF981F;
+}
+
+.cover_section .title_container img {
+  width: 100%;
+}
+
+.cover_section .cover_img img {
+  width: 70vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.cover_section .cover_img img.mobile {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .cover_section {
+    height: auto;
+    position: relative;
+    margin-bottom: 10vw;
+  }
+  .cover_section .mobile_super_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 12.5vw;
+    left: 1.5vw;
+  }
+  .cover_section .mobile_super_title .page_title_japanese {
+    font-size: 3.382vw;
+    font-weight: bold;
+    font-family: Noto Serif JP;
+    color: #fff;
+    text-shadow: 0 -0.483vw 0.725vw rgba(0, 0, 0, 0.44);
+  }
+  .cover_section .mobile_super_title img {
+    margin-left: 1vw;
+    width: 37vw;
+  }
+  .cover_section .title_container {
+    position: unset;
+  }
+  .cover_section .title_container .page_title {
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
+    right: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    font-size: 17.15vw;
+    line-height: .5;
+  }
+  .cover_section .title_container .desktop {
+    display: none;
+  }
+  .cover_section .cover_img {
+    width: 100%;
+  }
+  .cover_section .cover_img img {
+    width: 100%;
+    height: auto;
+  }
+  .cover_section .cover_img img.mobile {
+    display: block;
+  }
+  .cover_section .cover_img img.desktop {
+    display: none;
+  }
+}
+
+#contact_us {
+  padding: 12.5vw 0 8.25vw;
+}
+
+#contact_us .bg {
+  background: #FF981F;
+  padding: 6vw 12vw;
+}
+
+#contact_us .bg .contact_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#contact_us .bg .contact_grid .contact_us_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+#contact_us .bg .contact_grid a {
+  color: #000;
+}
+
+#contact_us .bg .contact_grid .contact_us_button {
+  font-family: Noto Serif JP;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2vw 0;
+}
+
+#contact_us .bg .contact_grid .contact_us_button .button_text {
+  font-size: 1.5vw;
+}
+
+#contact_us .bg .contact_grid .contact_us_button img {
+  height: 1.25vw;
+  margin-left: 1vw;
+}
+
+#contact_us .bg .contact_grid .contact_us_button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#E9E9E9));
+  background: linear-gradient(#fff, #E9E9E9);
+  -webkit-box-shadow: 0 0.25vw 0.25vw rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.25vw 0.25vw rgba(0, 0, 0, 0.5);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#contact_us .bg .contact_grid .contact_us_button:hover .button_text {
+  color: #4F4F4F;
+}
+
+@media (max-width: 767.98px) {
+  #contact_us {
+    padding: 16.7vw 0 10.386vw;
+  }
+  #contact_us .bg {
+    padding: 10.6vw 25vw;
+  }
+  #contact_us .bg .contact_grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #contact_us .bg .contact_grid .contact_us_title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: normal;
+    height: 13.5vw;
+    font-size: 5.8vw;
+  }
+  #contact_us .bg .contact_grid a {
+    color: #000;
+  }
+  #contact_us .bg .contact_grid .contact_us_button {
+    font-family: Noto Serif JP;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2vw 0;
+    height: 13.5vw;
+  }
+  #contact_us .bg .contact_grid .contact_us_button .button_text {
+    font-size: 2.9vw;
+  }
+  #contact_us .bg .contact_grid .contact_us_button img {
+    height: 2.75vw;
+    margin-left: 2vw;
+  }
+}
+
+.top_message_title {
+  font-size: 2.25vw;
+  font-family: Noto Serif JP;
+  text-align: center;
+  padding: 2vw 0 3vw;
+}
+
+article .industry_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-column-gap: 1.875vw;
+          column-gap: 1.875vw;
+}
+
+article .industry_grid .section_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+article .industry_grid .section_text {
+  font-size: 1.5vw;
+  line-height: 1.46;
+}
+
+article :nth-child(2n) .section_img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+/*# sourceMappingURL=industries.css.map */

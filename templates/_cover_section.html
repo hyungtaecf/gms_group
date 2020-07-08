@@ -1,0 +1,17 @@
+{% load static %}
+<!-- Cover -->
+<section id="cover" class="cover_section">
+    <div class="mobile_super_title">
+        <div class="page_title_japanese">{{ japanese_title }}</div>
+        <img src="{%static 'img/service_mobile_line.svg'%}" alt="">
+    </div>
+    <div class="title_container">
+        <div class="page_title">{{ english_title }}</div>
+        <img class="desktop" src="{% static 'img/cover_gradient.png' %}" alt="">
+    </div>
+    <div class="cover_img">
+        <img class="desktop" src="{% static cover_img %}" alt="">
+        <img class="mobile" src="{% static cover_img_mobile %}" alt="">
+    </div>
+</section>
+<!-- !Cover -->

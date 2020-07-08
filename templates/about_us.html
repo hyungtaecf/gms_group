@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% load static %} {% block title %}About Us{% endblock %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/about_us.css' %}"> {% endblock %} {% block content %} {% include "_cover_section.html" with japanese_title='会社概要' english_title='About Us' cover_img='img/about_us_cover.png' cover_img_mobile='img/about_us_cover_mobile.png' %}
+<!-- Vision -->
+<section id="vision">
+    <div class="section_title2">Vision</div>
+    <div class="vision_body_text">
+        <p>GMS Groupではお客様のビジネスのサポート、課題解決、コンサルティング等ありとあ<br>らゆる角度からサービスを提供しています。</p>
+        <p>また、お客様の課題に注目し、最も適した施策が提案できるよう各部門の専門パート<br>ナーと提携しております。 お客様の課題とご要望（納期・予算・仕様）に合わせて、各パー
+            <br>トナーの特徴を把握したGMS Groupのスタッフが最適なチームを構築していきます。</p>
+        <p>さらに、ほぼ全ての案件において、パートナーと協力し合いながら<br>進める体制を取っております。</p>
+        <p>ご要望を叶えるだけでなく、問題解決にも親身になって取り組みます。</p>
+        <p>共に新しいビジネスチャンスと価値を生み出す貢献性の高い企業を目指しています。</p>
+        <p>是非安心してご相談ください。</p>
+
+    </div>
+</section>
+<!-- !Vision -->
+
+<article>
+    <!-- Company Profile -->
+    <section id="profile">
+        <div class="section_title2">会社概要</div>
+        <p>
+            <strong>会社名</strong><br>合同会社形源商社
+        </p>
+        <p>
+            <strong>代表責任者</strong><br>鈴木基文
+        </p>
+        <p>
+            <strong>所在地</strong><br>東京都世田谷区千歳台4-6-5
+        </p>
+        <p>
+            <strong>電話番号</strong><br>03-6555-2588
+        </p>
+        <p>
+            <strong>電話受付時間</strong>9:00〜18:00（月曜日〜金曜日）<br>※ 土曜・日曜は休み
+        </p>
+        <p>
+            <strong>公開メールアドレス</strong><br>info@gms.jp
+        </p>
+    </section>
+    <!-- !Company Profile -->
+</article>
+{% include "_contact_us_section.html" %} {% endblock %}

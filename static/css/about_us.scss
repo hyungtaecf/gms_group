@@ -1,0 +1,33 @@
+@import './variables';
+@import './cover_section';
+@import './contact_section';
+#vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12vw 0 8.75vw;
+    .section_title2 {
+        font-family: Roboto;
+    }
+    .vision_body_text {
+        margin-top: 1.5vw;
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.46;
+        font-family: Noto Sans JP;
+        p {
+            margin-bottom: .5vw;
+        }
+    }
+}
+
+article {
+    #profile {
+        font-family: Noto Sans JP;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

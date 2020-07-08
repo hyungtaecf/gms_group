@@ -1,0 +1,31 @@
+@import './variables';
+@import './cover_section';
+@import './contact_section';
+.top_message_title {
+    font-size: 2.25vw;
+    font-family: Noto Serif JP;
+    text-align: center;
+    padding: 2vw 0 3vw;
+}
+
+article {
+    .industry_grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 1.875vw;
+        .section_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .section_text {
+            font-size: 1.5vw;
+            line-height: 1.46;
+        }
+    }
+     :nth-child(2n) {
+        .section_img {
+            order: 2;
+        }
+    }
+}

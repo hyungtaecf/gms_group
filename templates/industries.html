@@ -1,0 +1,174 @@
+{% extends "base.html" %} {% load static %} {% block title %}Industries{% endblock %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/industries.css' %}"> {% endblock %} {% block content %} {% include "_cover_section.html" with japanese_title='産業領域' english_title='Industries' cover_img='img/industries_cover.png' cover_img_mobile='img/industries_cover_mobile.png' %}
+<!-- TODO: Adjust spacing and breaklines -->
+<!-- TODO: Mobile Version -->
+<!-- Top Message -->
+<div class="top_message_title">産業領域</div>
+<div class="top_message">各産業ごとに必要な人材、資源は異なるため パートナーとの<br>ネットワークを効率的に活用し、<br>お客様をサポートします。
+</div>
+<!-- !Top Message -->
+
+<article>
+    <!-- Agricultural Science and Technology -->
+    <section id="agro" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/agricultural_science_and_technology.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">農業科学技術</div>
+            </div>
+            <div class="section_text"> 科学技術を農業に取り入れることによって、<br>農業生産性の飛躍的な発展を推進する。</div>
+        </div>
+    </section>
+    <!-- !Agricultural Science and Technology -->
+
+    <!-- Health management -->
+    <section id="health_management" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/health_management2.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">健康管理（維持・予防）</div>
+            </div>
+            <div class="section_text">次世代ヘルスケア産業へ向けて、公的保険外の予防・健康管理サービスの活用を達成。</div>
+        </div>
+    </section>
+    <!-- !Health management -->
+
+    <!-- Aerospace -->
+    <section id="aerospace" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/aerospace.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">航空宇宙</div>
+            </div>
+            <div class="section_text">速くて安く、便利な人とモノの移動が実現可能となる、 次世代の都市間移動サービス。
+            </div>
+        </div>
+    </section>
+    <!-- !Aerospace -->
+
+    <!-- Family care -->
+    <section id="family_care" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/family_care.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">ファミリーケア</div>
+            </div>
+            <div class="section_text">家族は愛を育む学校。夫婦、親、子として学びながら円満な家庭を築くライフスタイル。
+            </div>
+        </div>
+    </section>
+    <!-- !Family care -->
+
+    <!-- Mobile banking -->
+    <section id="mobile_banking" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/mobile_banking.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">モバイルバンキング</div>
+            </div>
+            <div class="section_text">最新のセキュリティ技術で安全に、いつでもどこでも 金融機関のサービスがご利用可能に。
+            </div>
+        </div>
+    </section>
+    <!-- !Mobile banking -->
+
+    <!-- IT & system integration -->
+    <section id="system_integration" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/system_integration.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">IT & システムインテグレーション</div>
+            </div>
+            <div class="section_text">戦略システム構築からマーケティングや最新テクノロジーとの連携まで。ビジネスを自由自在に拡張する。
+            </div>
+        </div>
+    </section>
+    <!-- !IT & system integration -->
+
+    <!-- Blockchain/AI -->
+    <section id="blockchain" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/blockchain_ai.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">ブロックチェーン・AI</div>
+            </div>
+            <div class="section_text">ブロックチェーン・AIでビジネスや社会の課題を解決する。
+            </div>
+        </div>
+    </section>
+    <!-- !Blockchain/AI -->
+
+    <!-- financial services and tax costs -->
+    <section id="financial" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/financial_services.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">金融サービス・税務コストの最適化</div>
+            </div>
+            <div class="section_text">税務について事業戦略との連携を高めその最適化を図る。
+            </div>
+        </div>
+    </section>
+    <!-- !financial services and tax costs -->
+
+    <!-- Gaming -->
+    <section id="gaming" class="industry_grid">
+        <div class="section_img">
+            <img src="{%static 'img/gaming.png'%}" alt="">
+        </div>
+        <div class="section_content">
+            <div class="title_container">
+                <div class="title_decoration">
+                    <img src="{%static 'img/title_decoration.svg'%}" alt="">
+                </div>
+                <div class="section_title2">ゲーミング</div>
+            </div>
+            <div class="section_text">ゲームを通して、新しい知識と教育システムを。
+            </div>
+        </div>
+    </section>
+    <!-- !Gaming -->
+
+</article>
+
+{% include "_contact_us_section.html" %} {% endblock %}

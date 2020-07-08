@@ -27,3 +27,27 @@
     font-weight: bold;
     src: url('../fonts/NotoSerifJP-Bold.otf') format('opentype');
 }
+
+@font-face {
+    font-family: Roboto;
+    font-weight: bold;
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-weight: normal;
+    src: url('../fonts/NotoSansJP-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-weight: 500;
+    src: url('../fonts/NotoSansJP-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-weight: bold;
+    src: url('../fonts/NotoSansJP-Bold.otf') format('opentype');
+}

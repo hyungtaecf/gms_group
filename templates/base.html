@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="search">
                 <img src="{% static 'img/search.svg' %}" alt="">
             </div>
@@ -20,7 +20,7 @@
                 <div class="full_name">Global Management Support</div>
             </a>
             <a class="navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="{% static 'img/dehaze.svg' %}" alt="">
+                <img src="{% static 'img/dehaze.svg' %}" alt="Menu">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -31,30 +31,30 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#industries">
+                        <a class="nav-link" href="{% url 'industries' %}">
                             <div class="english">Industries</div>
                             <div class="japanese">産業領域</div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about_us">
+                        <a class="nav-link" href="{% url 'about_us' %}">
                             <div class="english">About Us</div>
                             <div class="japanese">会社概要</div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contact_us_menu_item" href="#">
+                        <a class="nav-link contact_us_menu_item" href="{% url 'contact_us' %}">
                             <div class="english">Contact Us</div>
                             <div class="japanese">お問い合わせ</div>
                         </a>
                     </li>
                     <li class="language">
                         <div class="language_item en">
-                            <a href="#">EN</a>
+                            <a href="">EN</a>
                         </div>
                         <div class="lang_separator">|</div>
                         <div class="language_item jp">
-                            <a href="#">JP</a>
+                            <a href="">JP</a>
                         </div>
                     </li>
                 </ul>
@@ -66,11 +66,21 @@
     </main>
     <footer>
         <div class="footer_col_left">
-            <div class="brand_name">GMS Group</div>
-            <div class="footer_left_item">サービス</div>
-            <div class="footer_left_item">産業領域</div>
-            <div class="footer_left_item">会社概要</div>
-            <div class="footer_left_item">お問い合わせ</div>
+            <a href="{% url 'home' %}">
+                <div class="brand_name">GMS Group</div>
+            </a>
+            <a href="{% url 'service' %}">
+                <div class="footer_left_item">サービス</div>
+            </a>
+            <a href="{% url 'industries' %}">
+                <div class="footer_left_item">産業領域</div>
+            </a>
+            <a href="{% url 'about_us' %}">
+                <div class="footer_left_item">会社概要</div>
+            </a>
+            <a href="{% url 'contact_us' %}">
+                <div class="footer_left_item">お問い合わせ</div>
+            </a>
         </div>
         <div class="footer_col_right">
             <div class="footer_right_item">

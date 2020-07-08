@@ -1,0 +1,5 @@
+{% extends "base.html" %} {% load static %} {% block title %}Contact Us{% endblock %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/contact_us.css' %}">
+{% endblock %} {% block content %}
+{% include "_cover_section.html" with japanese_title='お問い合わせ' english_title='Contact Us' cover_img='img/contact_us_cover.png' cover_img_mobile='img/contact_us_cover_mobile.png' %}
+{% endblock %}

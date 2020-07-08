@@ -1,0 +1,92 @@
+header {
+    height: 6.3vw;
+}
+
+.cover_section {
+    display: flex;
+    justify-content: flex-end;
+    height: 30vw;
+    margin-bottom: 5.875vw;
+    .mobile_super_title {
+        display: none;
+    }
+    .title_container {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        .page_title {
+            position: absolute;
+            bottom: 50%;
+            right: -10vw;
+            transform: translateY(50%) rotate(-90deg);
+            font-size: 6vw;
+            font-weight: bold;
+            color: $primary;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .cover_img {
+        img {
+            width: 70vw;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            &.mobile {
+                display: none;
+            }
+        }
+    }
+    @media #{$query_tablet} {
+        height: auto;
+        position: relative;
+        margin-bottom: 10vw;
+        .mobile_super_title {
+            display: flex;
+            position: absolute;
+            bottom: 12.5vw;
+            left: 1.5vw;
+            .page_title_japanese {
+                font-size: 3.382vw;
+                font-weight: bold;
+                font-family: Noto Serif JP;
+                color: $white;
+                text-shadow: 0 -0.483vw 0.725vw rgba($black, 0.44);
+            }
+            img {
+                margin-left: 1vw;
+                width: 37vw;
+            }
+        }
+        .title_container {
+            position: unset;
+            .page_title {
+                position: absolute;
+                bottom: 0;
+                left: 1vw;
+                right: unset;
+                transform: unset;
+                font-size: 17.15vw;
+                line-height: .5;
+            }
+            .desktop {
+                display: none;
+            }
+        }
+        .cover_img {
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+                &.mobile {
+                    display: block;
+                }
+                &.desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}
