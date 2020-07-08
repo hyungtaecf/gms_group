@@ -20,6 +20,12 @@
             margin-bottom: .5vw;
         }
     }
+    @media #{$query_tablet} {
+        .vision_body_text {
+            font-size: 3.14vw;
+            padding: 0 4.589vw;
+        }
+    }
 }
 
 article {

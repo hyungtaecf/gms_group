@@ -170,6 +170,7 @@ a {
     font-weight: bold;
     font-family: Noto Sans JP;
     font-size: 2.25vw;
+    line-height: 1.4;
     @media #{$query_tablet} {
         font-size: 4.348vw;
     }
@@ -216,11 +217,11 @@ article {
         padding: 0 $body_padding;
         font-size: 3.14vw;
         .section_title2 {
-            padding: 2.25vw 0;
+            padding: 3vw 0 4.5vw;
         }
         p,
         li {
-            line-height: 1.6;
+            line-height: 1.68;
         }
         p {
             margin-bottom: 2vw;
@@ -239,6 +240,9 @@ article {
                     margin-left: 0;
                 }
             }
+        }
+        .mb_mobile {
+            margin-bottom: 5vw;
         }
     }
 }

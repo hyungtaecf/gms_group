@@ -1,16 +1,40 @@
+@media (max-width: 767.98px), (orientation: portrait) {
+  body {
+    background: #4F4F4F;
+  }
+}
+
 header {
   height: 6.3vw;
 }
 
+.mobile {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .desktop {
+    display: none;
+  }
+}
+
 #thank_you {
   font-family: Noto Serif JP;
+  background: #fff;
+  padding-bottom: 9vw;
 }
 
 #thank_you .big_message {
   font-weight: bold;
   font-size: 2.25vw;
   text-align: center;
-  margin: 12.7vw 0 3vw;
+  padding: 12.7vw 0 3vw;
 }
 
 #thank_you .small_message {
@@ -20,6 +44,22 @@ header {
 
 #thank_you img {
   width: 100%;
-  margin: 9vw 0 14.813vw;
+  margin-top: 9vw;
+}
+
+@media (max-width: 767.98px) {
+  #thank_you {
+    padding-bottom: 14.813vw;
+  }
+  #thank_you .big_message,
+  #thank_you .small_message {
+    font-size: 3.14vw;
+  }
+  #thank_you .big_message {
+    padding: 28vw 0 4.5vw;
+  }
+  #thank_you img {
+    margin-top: 15.5vw;
+  }
 }
 /*# sourceMappingURL=thank_you.css.map */

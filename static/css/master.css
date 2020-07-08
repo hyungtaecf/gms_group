@@ -509,6 +509,7 @@ footer .footer_col_right .footer_right_item strong {
   font-weight: bold;
   font-family: Noto Sans JP;
   font-size: 2.25vw;
+  line-height: 1.4;
 }
 
 @media (max-width: 767.98px) {
@@ -564,11 +565,11 @@ article ol ul li {
     font-size: 3.14vw;
   }
   article .section_title2 {
-    padding: 2.25vw 0;
+    padding: 3vw 0 4.5vw;
   }
   article p,
   article li {
-    line-height: 1.6;
+    line-height: 1.68;
   }
   article p {
     margin-bottom: 2vw;
@@ -585,6 +586,9 @@ article ol ul li {
   }
   article ol ul li {
     margin-left: 0;
+  }
+  article .mb_mobile {
+    margin-bottom: 5vw;
   }
 }
 /*# sourceMappingURL=master.css.map */

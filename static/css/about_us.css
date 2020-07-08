@@ -257,6 +257,13 @@ header {
   margin-bottom: .5vw;
 }
 
+@media (max-width: 767.98px) {
+  #vision .vision_body_text {
+    font-size: 3.14vw;
+    padding: 0 4.589vw;
+  }
+}
+
 article #profile {
   font-family: Noto Sans JP;
   display: -webkit-box;

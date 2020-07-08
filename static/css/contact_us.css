@@ -126,6 +126,12 @@ article p {
   margin-bottom: 3vw;
 }
 
+@media (max-width: 767.98px) {
+  article {
+    font-size: 3.14vw;
+  }
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,5 +224,21 @@ form button:hover {
           box-shadow: 0 0.25vw 0.25vw rgba(0, 0, 0, 0.5);
   -webkit-transition: .3s ease;
   transition: .3s ease;
+}
+
+@media (max-width: 767.98px) {
+  form {
+    font-size: 3.14vw;
+  }
+  form .form_group input,
+  form .form_group textarea {
+    width: 64.25vw;
+  }
+  form .form_group input {
+    height: 9.42vw;
+  }
+  form .form_group textarea {
+    height: 37vw;
+  }
 }
 /*# sourceMappingURL=contact_us.css.map */

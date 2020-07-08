@@ -232,6 +232,13 @@ header {
 }
 
 @media (max-width: 767.98px) {
+  .cover_section .title_container .page_title {
+    font-size: 17.15vw;
+    right: unset;
+  }
+}
+
+@media (max-width: 767.98px) {
   article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -276,6 +283,25 @@ header {
         -ms-flex-order: 7;
             order: 7;
   }
+  article p {
+    margin-bottom: 0;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .desktop {
+    display: none;
+  }
 }
 
 #list_of_services {
@@ -315,10 +341,6 @@ header {
   background: #4F4F4F;
   font-family: Noto Sans JP;
   font-size: 1.125vw;
-}
-
-#list_of_services .services_grid .service_card.mobile {
-  display: none;
 }
 
 @media (max-width: 767.98px) {
@@ -361,10 +383,32 @@ header {
 }
 
 @media (max-width: 767.98px) {
+  #digital_marketing .dm_column {
+    margin-bottom: 1vw;
+  }
   #digital_marketing .dm_column:nth-child(1) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  #digital_marketing .dm_column:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #blockchain .section_img img {
+    margin-top: 16.9vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #tax_supervision .section_img img,
+  #overseas .section_img img,
+  #health_management .section_img img {
+    margin-top: 10.87vw;
   }
 }
 /*# sourceMappingURL=service.css.map */

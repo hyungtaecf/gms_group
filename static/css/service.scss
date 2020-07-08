@@ -8,6 +8,14 @@
             font-size: 7.375vw;
         }
     }
+    @media #{$query_tablet} {
+        .title_container {
+            .page_title {
+                font-size: 17.15vw;
+                right: unset;
+            }
+        }
+    }
 }
 
 article {
@@ -35,6 +43,22 @@ article {
          :nth-child(7) {
             order: 7;
         }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.mobile {
+    display: none;
+    @media #{$query_tablet} {
+        display: block;
+    }
+}
+
+.desktop {
+    @media #{$query_tablet} {
+        display: none;
     }
 }
 
@@ -62,9 +86,6 @@ article {
             background: $dark;
             font-family: Noto Sans JP;
             font-size: 1.125vw;
-            &.mobile {
-                display: none;
-            }
         }
     }
     @media #{$query_tablet} {
@@ -100,8 +121,34 @@ article {
     }
     @media #{$query_tablet} {
         .dm_column {
+            margin-bottom: 1vw;
             &:nth-child(1) {
                 order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+}
+
+#blockchain {
+    @media #{$query_tablet} {
+        .section_img {
+            img {
+                margin-top: 16.9vw;
+            }
+        }
+    }
+}
+
+#tax_supervision,
+#overseas,
+#health_management {
+    @media #{$query_tablet} {
+        .section_img {
+            img {
+                margin-top: 10.87vw;
             }
         }
     }
