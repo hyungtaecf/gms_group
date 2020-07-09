@@ -226,6 +226,10 @@ header {
   }
 }
 
+.cover_section .title_container .page_title {
+  right: -9.5vw;
+}
+
 @media (max-width: 767.98px) {
   .cover_section .mobile_super_title {
     left: unset;
@@ -301,7 +305,7 @@ header {
 }
 
 #vision .vision_body_text p {
-  margin-bottom: .5vw;
+  margin-bottom: 0.5vw;
 }
 
 @media (max-width: 767.98px) {
@@ -315,7 +319,7 @@ header {
     padding: 0 5.9vw;
   }
   #vision .vision_body_text p {
-    margin-bottom: .5vw;
+    margin-bottom: 0.5vw;
   }
 }
 

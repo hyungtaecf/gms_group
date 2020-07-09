@@ -121,14 +121,18 @@ header {
   width: 53vw;
 }
 
+.cover_section .title_container {
+  left: 0.3vw;
+}
+
+.cover_section .title_container .page_title {
+  right: -11vw;
+}
+
 @media (max-width: 767.98px) {
   .cover_section {
     margin-bottom: 12vw;
   }
-}
-
-.title_container {
-  left: .3vw;
 }
 
 article {
@@ -183,7 +187,7 @@ form .form_group label {
 }
 
 form .form_group label[for="inquiry"] {
-  top: calc( 4.625vw / 2);
+  top: calc(4.625vw / 2);
 }
 
 form .form_group input,
@@ -242,8 +246,8 @@ form button {
 
 form button:hover {
   background: rgba(255, 152, 31, 0.75);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 @media (max-width: 767.98px) {
@@ -263,7 +267,7 @@ form button:hover {
     width: 20.5vw;
   }
   form .form_group label[for="inquiry"] {
-    top: calc( 9.42vw / 2);
+    top: calc(9.42vw / 2);
   }
   form .form_group input,
   form .form_group textarea {
