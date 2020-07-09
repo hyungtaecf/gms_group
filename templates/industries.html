@@ -1,7 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block title %}Industries{% endblock %} {% block styles %}
 <link rel="stylesheet" href="{% static 'css/industries.css' %}"> {% endblock %} {% block content %} {% include "_cover_section.html" with japanese_title='産業領域' english_title='Industries' cover_img='img/industries_cover.png' cover_img_mobile='img/industries_cover_mobile.png' %}
-<!-- TODO: Adjust spacing and breaklines -->
-<!-- TODO: Mobile Version -->
 <!-- Top Message -->
 <div class="top_message_title">産業領域</div>
 <div class="top_message desktop">各産業ごとに必要な人材、資源は異なるため パートナーとの<br>ネットワークを効率的に活用し、<br>お客様をサポートします。</div>
@@ -23,7 +21,10 @@
                 </div>
                 <div class="section_title2">農業科学技術</div>
             </div>
-            <div class="section_text"> 科学技術を農業に取り入れることによって、<br>農業生産性の飛躍的な発展を推進する。</div>
+            <div class="section_text">
+                <span class="desktop">科学技術を農業に取り入れることによって、<br>農業生産性の飛躍的な発展を推進する。</span>
+                <span class="mobile">科学技術を農業に取り入れることによって、農業生産性の<br>飛躍的な発展を推進する。</span>
+            </div>
         </div>
     </section>
     <!-- !Agricultural Science and Technology -->
@@ -42,7 +43,10 @@
                 </div>
                 <div class="section_title2">健康管理（維持・予防）</div>
             </div>
-            <div class="section_text">次世代ヘルスケア産業へ向けて、公的保険外の予防・健康管理サービスの活用を達成。</div>
+            <div class="section_text">
+                <span class="desktop">次世代ヘルスケア産業へ向けて、公的保険外の予防・健康管理サービスの活用を達成。</span>
+                <span class="mobile">次世代ヘルスケア産業へ向けて、公的保険外の予防・健康<br>管理サービスの活用を達成。</span>
+            </div>
         </div>
     </section>
     <!-- !Health management -->
@@ -61,7 +65,9 @@
                 </div>
                 <div class="section_title2">航空宇宙</div>
             </div>
-            <div class="section_text">速くて安く、便利な人とモノの移動が実現可能となる、 次世代の都市間移動サービス。
+            <div class="section_text">
+                <span class="desktop">速くて安く、便利な人とモノの移動が実現可能となる、 次世代の都市間移動サービス。</span>
+                <span class="mobile">速くて安く、便利な人とモノの移動が実現可能となる、<br>次世代の都市間移動サービス。</span>
             </div>
         </div>
     </section>
@@ -81,7 +87,9 @@
                 </div>
                 <div class="section_title2">ファミリーケア</div>
             </div>
-            <div class="section_text">家族は愛を育む学校。夫婦、親、子として学びながら円満な家庭を築くライフスタイル。
+            <div class="section_text">
+                <span class="desktop">家族は愛を育む学校。夫婦、親、子として学びながら円満な家庭を築くライフスタイル。</span>
+                <span class="mobile">家族は愛を育む学校。夫婦、親、子として学びながら円満<br>な家庭を築くライフスタイル。</span>
             </div>
         </div>
     </section>
@@ -101,7 +109,9 @@
                 </div>
                 <div class="section_title2">モバイルバンキング</div>
             </div>
-            <div class="section_text">最新のセキュリティ技術で安全に、いつでもどこでも 金融機関のサービスがご利用可能に。
+            <div class="section_text">
+                <span class="desktop">最新のセキュリティ技術で安全に、いつでもどこでも 金融機関のサービスがご利用可能に。</span>
+                <span class="mobile">最新のセキュリティ技術で安全に、いつでもどこでも<br>金融機関のサービスがご利用可能に。</span>
             </div>
         </div>
     </section>
@@ -121,7 +131,9 @@
                 </div>
                 <div class="section_title2">IT & システムインテグレーション</div>
             </div>
-            <div class="section_text">戦略システム構築からマーケティングや最新テクノロジーとの連携まで。ビジネスを自由自在に拡張する。
+            <div class="section_text">
+                <span class="desktop">戦略システム構築からマーケティングや最新テクノロジーとの連携まで。ビジネスを自由自在に拡張する。</span>
+                <span class="mobile">戦略システム構築からマーケティングや最新テクノロジー<br>との連携まで。ビジネスを自由自在に拡張する。</span>
             </div>
         </div>
     </section>
@@ -141,7 +153,10 @@
                 </div>
                 <div class="section_title2">ブロックチェーン・AI</div>
             </div>
-            <div class="section_text">ブロックチェーン・AIでビジネスや社会の課題を解決する。
+            <div class="section_text">
+                <span class="desktop">ブロックチェーン・AIでビジネスや社会の課題を解決する。</span>
+                <span class="mobile"> 戦略システム構築からマーケティングや最新テクノロジー<br>との連携まで。ビジネスを自由自在に拡張する。</span>
+
             </div>
         </div>
     </section>

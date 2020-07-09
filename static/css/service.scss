@@ -100,14 +100,8 @@ article {
                 width: 42.754vw;
                 text-shadow: 0 1vw 1vw rgba($black, 0.25);
                 font-size: 2.415vw;
-                &.desktop {
-                    display: none;
-                }
-                &.mobile {
-                    display: flex;
-                }
-                &:nth-child(4) {
-                    order: 5;
+                &:nth-child(3) {
+                    order: 4;
                 }
             }
         }
@@ -117,11 +111,14 @@ article {
 #digital_marketing {
     .dm_grid {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr;
     }
     @media #{$query_tablet} {
+        .dm_grid {
+            grid-template-columns: auto;
+        }
         .dm_column {
-            margin-bottom: 1vw;
+            margin-bottom: 2vw;
             &:nth-child(1) {
                 order: 2;
             }
@@ -150,6 +147,35 @@ article {
             img {
                 margin-top: 10.87vw;
             }
+        }
+    }
+}
+
+#overseas {
+    @media #{$query_tablet} {
+        .mb_mobile {
+            margin-bottom: 10vw;
+        }
+    }
+}
+
+#health_management {
+    @media #{$query_tablet} {
+        .mb_mobile {
+            margin-bottom: 10vw;
+        }
+    }
+}
+
+#real_state {
+    @media #{$query_tablet} {
+        .section_img {
+            img {
+                margin-top: 2vw;
+            }
+        }
+        .mb_mobile {
+            margin-bottom: 10vw;
         }
     }
 }

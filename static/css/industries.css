@@ -226,6 +226,11 @@ header {
   }
 }
 
+.cover_section .mobile_super_title img {
+  margin-left: 2vw;
+  width: 57vw;
+}
+
 .top_message_title {
   font-size: 2.25vw;
   font-family: Noto Serif JP;
@@ -278,7 +283,11 @@ article .industry_grid .section_content {
 }
 
 article .industry_grid .section_content .title_container .title_decoration img {
-  width: 8.25vw;
+  width: 8.313vw;
+}
+
+article .industry_grid .section_content .title_container .section_title2 {
+  padding: .5vw 0;
 }
 
 article .industry_grid .section_text {
@@ -300,8 +309,11 @@ article :nth-child(2n) .section_img {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
+  article .industry_grid .section_img img {
+    margin-top: 12.077vw;
+  }
   article .industry_grid .section_content {
-    padding-left: 7.246vw;
+    padding: 7.729vw 7.246vw 0;
   }
   article .industry_grid .section_content .title_container {
     display: -webkit-box;
@@ -314,6 +326,10 @@ article :nth-child(2n) .section_img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 3.865vw;
+  }
+  article .industry_grid .section_content .title_container .title_decoration {
+    margin-right: 1.7vw;
   }
   article .industry_grid .section_content .title_container .title_decoration img {
     width: 1.208vw;

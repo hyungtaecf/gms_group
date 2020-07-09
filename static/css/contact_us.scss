@@ -1,5 +1,18 @@
 @import './variables';
 @import './cover_section';
+.cover_section {
+    margin-bottom: 6.813vw;
+    .mobile_super_title {
+        img {
+            margin-left: 2vw;
+            width: 53vw;
+        }
+    }
+    @media #{$query_tablet} {
+        margin-bottom: 12vw;
+    }
+}
+
 .title_container {
     left: .3vw;
 }
@@ -13,6 +26,9 @@ article {
     }
     @media #{$query_tablet} {
         font-size: 3.14vw;
+        p {
+            margin-bottom: 9.42vw;
+        }
     }
 }
 
@@ -56,35 +72,58 @@ form {
             resize: none;
         }
          ::placeholder {
-            color: rgba($black, 0.22);
+            color: rgba($black, 0.4);
         }
     }
     button {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: Noto Serif JP;
         border: none;
         background: $primary;
         height: 3.688vw;
-        width: 31.813vw;
+        width: 24.4vw;
+        box-shadow: 0px .25vw .25vw rgba($black, 0.25);
         &:hover {
-            box-shadow: 0 .25vw .25vw rgba($black, .5);
+            background: rgba($primary, 0.75);
             transition: .3s ease;
         }
     }
     @media #{$query_tablet} {
+        $label_width: 20.5vw;
+        padding: 16vw 0 12.5vw;
+        padding-left: #{$label_width + 4vw};
         font-size: 3.14vw;
+        align-items: flex-start;
         .form_group {
+            $input_height: 9.42vw;
+            margin-bottom: 8.454vw;
+            label {
+                left: calc(-#{$label_width} - 1.5vw);
+                width: $label_width;
+                &[for="inquiry"] {
+                    top: calc( #{$input_height} / 2)
+                }
+            }
             input,
             textarea {
                 width: 64.25vw;
+                box-shadow: inset 0px 1vw 1vw rgba($black, 0.09);
+                padding: 3vw;
             }
             input {
-                height: 9.42vw;
+                height: $input_height;
             }
             textarea {
                 height: 37vw;
             }
+        }
+        button {
+            margin-top: 3vw;
+            height: 9.184vw;
+            width: 49.848vw;
+            box-shadow: 0px 1vw 1vw rgba($black, 0.25);
         }
     }
 }

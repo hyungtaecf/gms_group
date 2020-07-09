@@ -24,7 +24,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = '+up*os@8pv5vn0)8ue#=r8-a%3q+!@12-40t@or=&f#7rz*q&d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['kgen.pythonanywhere.com', 'localhost', '127.0.0.1']
 
