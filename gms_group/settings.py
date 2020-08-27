@@ -26,7 +26,7 @@ SECRET_KEY = '+up*os@8pv5vn0)8ue#=r8-a%3q+!@12-40t@or=&f#7rz*q&d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['kgen.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['kgen.group','www.kgen.group','kgen.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
