@@ -79,6 +79,20 @@ header {
                     margin: 0 1.25vw;
                 }
             }
+            .hide_with_placeholder {
+                color: transparent!important;
+                cursor: default;
+                user-select: none;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -o-user-select: none;
+                text-shadow: none!important;
+                a {
+                    cursor: default;
+                    color: transparent!important;
+                }
+            }
         }
     }
     @media #{$query_tablet} {

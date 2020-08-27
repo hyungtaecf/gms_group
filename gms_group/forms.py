@@ -21,7 +21,7 @@ class ContactForm(forms.Form):
         send_mail(
             "New Q&A form email",
             content,
-            "GMS Group",
-            ['info@gms.jp'],
+            "K-Gen Group",
+            ['info@kgen.group'],
             fail_silently=False,
         )

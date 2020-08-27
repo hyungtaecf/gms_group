@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{% static 'css/contact_us.css' %}"> {% endblock %} {% block content %} {% include "_cover_section.html" with japanese_title='お問い合わせ' english_title='Contact Us' cover_img='img/contact_us_cover.png' cover_img_mobile='img/contact_us_cover_mobile.png' %}
 <article>
     <p><strong>ご関心頂き、誠にありがとうございます。</strong><br>下記フォーマットにご記入いただき、内容をご確認のうえ、<br>「メッセージを送る」ボタンを押して送信してください。</p>
-    <p><strong>メール： info@gms.jp<br>電話：03-6555-2588（月曜〜金曜日 9:00~18:00）</strong></p>
+    <p><strong>メール： info@kgen.group<br>電話：03-6555-3580（月曜〜金曜日 9:00~18:00）</strong></p>
 </article>
 <form method="POST">
     {% csrf_token %}
@@ -10,7 +10,7 @@
         <input name="name" type="text" value="{{ name }}" placeholder="山田太郎">
     </div>
     <div class="form_group"><label for="email">Eメール</label>
-        <input name="email" type="text" value="{{ email }}" placeholder="gms@example.com">
+        <input name="email" type="text" value="{{ email }}" placeholder="kgen@example.com">
     </div>
     <div class="form_group"><label for="phone">電話番号</label>
         <input name="phone" type="text" value="{{ phone }}" placeholder="0123456789">

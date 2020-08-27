@@ -330,6 +330,23 @@ header .navbar .navbar-nav .language .lang_separator {
   margin: 0 1.25vw;
 }
 
+header .navbar .navbar-nav .hide_with_placeholder {
+  color: transparent !important;
+  cursor: default;
+  -ms-user-select: none;
+      user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  text-shadow: none !important;
+}
+
+header .navbar .navbar-nav .hide_with_placeholder a {
+  cursor: default;
+  color: transparent !important;
+}
+
 @media (max-width: 767.98px) {
   header {
     min-height: 21.3vw;

@@ -330,7 +330,8 @@
             width: 16.5vw;
             margin-right: 1.5vw;
             &:nth-child(1) img {
-                height: 3vw;
+                // height: 3vw;
+                height: 2.5vw;
             }
             &:nth-child(2) img {
                 height: 3.438vw;
@@ -358,7 +359,8 @@
                 &:nth-child(1) {
                     order: 2;
                     img {
-                        height: 6.522vw;
+                        // height: 6.522vw;
+                        height: 5vw;
                     }
                 }
                 &:nth-child(2) {
